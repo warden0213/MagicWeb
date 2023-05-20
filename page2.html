@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>4 Király 4 Királynő - Bűvésztrükk tutorial</title>
+  <script>
+    function updateTextSize() {
+      var slider = document.getElementById("textSizeSlider");
+      var textSize = slider.value + "px";
+      document.body.style.fontSize = textSize;
+    }
+
+    function resetTextSize() {
+      var slider = document.getElementById("textSizeSlider");
+      slider.value = 16; // Set the default font size value
+      updateTextSize();
+    }
+
+    function toggleContrast() {
+      var divs = document.getElementsByTagName("div");
+      for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.toggle('high-contrast');
+      }
+    }
+  </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="images/cardsNavbar.png" alt="Kártyák, a főoldalra visz kattintáskor" id="navkep"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="page2.html">Trükk tutorial 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page3.html">Trükk tutorial 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page4.html">Űrlap a trükkökről</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <label for="textSizeSlider" class="sliderLabel">Betűméret állító csúszka</label>
+      <input type="range" id="textSizeSlider" min="12" max="30" value="16" onchange="updateTextSize()">
+      <button onclick="resetTextSize()">Betűméret alaphelyzet</button>
+      <button onclick="toggleContrast()">Sötét Mód (Nagykontraszt)</button>
+      <a href="#main-content" class="skip-link">Ugrás a tartalomra</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="sidebar">
+              <h1>A 4 Király 4 Királynő</h1>
+              <p>Ez a trükk egy önműködő trükk, miután ismerjük a szabályait, bárhol bármikor be tudjuk mutatni. Nincs szükség hozzá megtanulni nehéz "slight of hand" mozdulatokat. Mint azt említettem a <a href="index.html">főoldal</a>on, egy szimpla önműködő trükkel is el lehet kápráztatni a legtöbb embert, aki nem jártas ilyesmiben.</p>
+              <h2 id="main-content">Videó a trükkről</h2>
+              <video src="images/44VID.mp4" controls poster="images/Poster44.jpg">A böngésződ nem támogatja a videólejátszót</video>
+              <details>  
+                <summary>Link a videó leírásához</summary>
+                <p><a href="videoleiras1.xhtml">Link</a></p>
+              </details>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="content">
+              <h2>Tutorial</h2>
+              <div class="container">
+                <figure>
+                <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                    <p>1. A trükkhöz a nevében is említett lapokra lesz szükségünk. A képen látható sorrendben, mert csak így fog működni a trükk. Könnyű megjegyezni ezt a sorrendet, amellett hogy számtalan trükkben használják, van egy rövidítése, a <strong>CHASED</strong>, amely az angol "Clubs (Treff)", "Hearts (Szív)", "Spades (Pikk)" és a "Diamond (Káró)" szavakból áll össze.</p>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <a href="images/44PIC.jpg" target="_blank"><img src="images/44PICkisebb.png" alt="Kép a szükséges lapokról, 4 király, 4 királynő, a megfelelő sorrendben treff Király, szív király, pikk király, káró király, és a királynők utána ugyanilyen sorrendben (ismert nevén a CHASED sorrend)"></a>
+                  </div>
+                </div>
+                </figure>
+                <div class="row">
+                  <div class="col-12">
+                    <p>2. A videóban követhető, hogy hogyan osztom ketté a lapokat. Neked ugyanezt kell csinálnod, ez a része teljesen önműködő. Azonban a szabály, ami miatt nem tudja bárki csak úgy rekreálni a trükköt, az abban rejlik, hogy miután megmutattam a 4 lapot, hova teszem vissza a lapokat: A kezemben lévő 4 lap alá, vagy fölé. Ehhez készítettem egy <strong>táblázatot ami bemutatja</strong></p>
+                  </div>
+                  </div>
+                 <div class="row"> 
+                  <div class="col-12">
+                    <table>
+                      <caption>
+                        Cheat sheet a szabályokhoz
+                        <details>
+                          <summary>Magyarázat</summary>
+                          <p>A táblázat legfelső sorában be van számozva hanyadjára mutatjuk meg a lapokat a nézőnek, alatta pedig a második sorban látjuk hova kell tenni a megmutatott lapokat, hogyha köztük van a néző választottja. A harmadik sorban pedig hogy hova kell tenni őket, hogyha a néző nem látja a lapját</p>
+                        </details>
+                      </caption>
+                      <tr>
+                        <th></th>
+                        <th>Első megmutatás</th>
+                        <th>Második megmutatás</th>
+                        <th>Harmadik megmutatás</th>
+                      </tr>
+                      <tr>
+                        <td>Látja a lapját</td>
+                        <td>Felülre</td>
+                        <td>Alulra</td>
+                        <td>Felülre</td>
+                      </tr>
+                      <tr>
+                        <td>Nem látja a lapját</td>
+                        <td>Alulra</td>
+                        <td>Felülre</td>
+                        <td>Alulra</td>
+                      </tr>
+                      </table>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                       <p>3. <strong>Ezek után semmi más trükk nincs</strong>, a lapok a helyükön vannak, innentől ha leosztod a lapokat úgy ahogy azt én a videóban teszem, akkor készen állsz, hogy elkápráztass bárkit, akár magad is. Hiszen ez egy önműködő trükk, még a te lapodat is ki tudja találni.</p>
+                    </div> 
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

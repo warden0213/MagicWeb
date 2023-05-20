@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>3 Card Monte - Bűvész trükk tutorial</title>
+  <script>
+    function updateTextSize() {
+      var slider = document.getElementById("textSizeSlider");
+      var textSize = slider.value + "px";
+      document.body.style.fontSize = textSize;
+    }
+
+    function resetTextSize() {
+      var slider = document.getElementById("textSizeSlider");
+      slider.value = 16; // Set the default font size value
+      updateTextSize();
+    }
+
+    function toggleContrast() {
+      var divs = document.getElementsByTagName("div");
+      for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.toggle('high-contrast');
+      }
+    }
+  </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="images/cardsNavbar.png" alt="Kártyák, a főoldalra visz kattintáskor" id="navkep"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page2.html">Trükk tutorial 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-primary" href="page3.html">Trükk tutorial 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page4.html">Űrlap a trükkökről</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <label for="textSizeSlider" class="sliderLabel">Betűméret állító csúszka</label>
+      <input type="range" id="textSizeSlider" min="12" max="30" value="16" onchange="updateTextSize()">
+      <button onclick="resetTextSize()">Betűméret alaphelyzet</button>
+      <button onclick="toggleContrast()">Sötét Mód (Nagykontraszt)</button>
+      <a href="#main-content" class="skip-link">Ugrás a tartalomra</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="sidebar">
+           <header>   <h1>3 Card Monte</h1>
+              <p>A <strong>3 Card Monte</strong>, avagy az itt a piros hol a piros, amit alapvetően asztalon pakolgatva kevernek meg, itt egy kis csavarral történik. Az asztalon pakolgatva is lehet 
+              ám csalni, és az is elég könnyű. De ebben a tutorialban nem azt a verziót fogjuk megtanulni</p>
+            </header>
+              <h2 id="main-content">Videó a trükkről</h2>
+              <video src="images/3CardVID.mp4" controls poster="images/3CardPoster.jpg">A böngésződ nem támogatja a videólejátszót</video>
+              <details>  
+                <summary>Link a videó leírásához</summary>
+                <p><a href="videoleiras2.xhtml">Link</a></p>
+              </details>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="content">
+              <h2>Tutorial</h2>
+              <div class="container">
+                <figure> 
+                <div class="row"> 
+                  <div class="col-sm-12 col-md-6">
+                        <p>1. A trükkhöz, egy <strong>joker</strong>re, egy <strong>ász</strong>ra, vagy bármilyen <strong>feltűnő</strong> lapra, ami a "money card"-ként fog szerepelni. És kell egy <strong>szabadon választott lap</strong>, ez tényleg lehet bármi.</p>
+                        <aside>A joker helyett lehet bármilyen olyan lap, aminél normális hogy kettő van belőle, akár egy teljesen üres lap. A szabadon választott lap pedig lehet egy üres lap, amire ráírod, hogy (14 ezer :p)</aside>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <a href="images/3CardMonte1.jpg" target="_blank"><img src="images/3CardMonte1ZOOM.png" alt="A trükkhöz szükséges 3 lap, jelen esetben a képen a köt ász, egy joker, és a káró kilences látható"></a>
+                    </div>
+                  </div>
+                </figure>
+                  <div class="row"> 
+                    <div class="col-sm-12 col-md-6">
+                          <p>2. A trükkhöz mindössze két technikát kell megtanulni. Az első a <strong>"double lift"</strong>, amely hozzá fog segíteni hogy két lapot egyként mutass meg, így elrejtve az egyiket</p>
+                          <aside>A double lift egy könnyű koncepció, viszont úgy előadni hogy ne legyen feltűnő, kkfejezetten nehéz. Azonban egy egész pakli tetejéről sokkal nehezebb, de a mi esetünkben 3 lap közül kell felemelni 2-t, ami a legkönnyebb double lift.</aside>
+                      </div>
+                      <div class="col-sm-12 col-md-6">
+                          <a href="images/3cM2.jpg" target="_blank"><img src="images/3cM2kisebb.png" alt="A képen látható fogás egy sima mechanic's grip, a kezemben tartom a 3 lapot, 2-t kicsit kitolva, egynek tűnik, de a kártyak jobb felső sarkára helyezett nyomással igazából 2 lapot csúsztattam le"></a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p>A double lifthez a képen látható jobb sarokban kell nyomást gyakorolni a hüvelykujjunkkal, amely nyomást viszonozzuk a mutatóujjunkkal. A hüvelykujjunkkal tolni kezdjük a felső két lapot. Mikor egy kicsit már kitoltuk a két lapot, a másik kezünkkel megfoghatjuk őket, két ujjal nyomást gyakorolva rájuk, és felfordítjuk őket. Ennyi a double lift. Ha megszeretnéd tanulni hogyan kell egy egész pakli tetején megcsinálni ugyanezt, akkor Alex Pandrea tutorialja a legjobb, legpontosabb tutorial a neten. (Link a double lift tutorialhoz: <a href="https://www.youtube.com/watch?v=1SVArNzR4Uw" target="_blank">itt</a>)</p>
+                      </div>
+                    </div>
+                    <div class="row"> 
+                      <div class="col-sm-12 col-md-6">
+                            <p>3. Az utolsó mozdulatban, az <strong>alsó lapot fogjuk megmutatni úgy, mintha az a felső lenne</strong>, a képen nyomon lehet követni, azt amit itt olvasol. Először is a mutatóujjunkkal hátrahúzzuk a felső kártyát. Utána középsőujjunkat a középső kártyára tesszük, és így ezzel a két ujjunkkal előre toljuk a lapokat. Mikor toljuk, a hüvelykujjunkkal tudjuk megállítani a felső lapot ugyanott, ahol az alsó elhelyezkedik.</p>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                            <a href="images/3Mc3.png" target="_blank"><img src="images/3Mc3kisebb.png" alt="4 lépésben mutatom be a '3'-as mozdulatot. kitolás az első képen, visszahúzás a másodikon, megfogom a két lapot a harmdikon, és a negyediken már rakom is a helyére"></a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <p>Ezután annyi a dolgunk hogy megfogjuk az alsó és a felső lapot két ujjal, nyomást helyezünk rájuk, és 1 lapnak mutatva fordítjuk fel őket. Miután megmutattad, a double lifttel tudod őket visszafordítani feltűnés nélkül. Ezek után csak köves a videót, most hogy tudod a két titkos mozdulatot biztos menni fog. Sose adj elő olyan trükköt amit nem gyakoroltál be elég alaposan.</p>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+        </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

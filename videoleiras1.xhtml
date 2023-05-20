@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//HU"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hu" xml:lang="hu">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Leírása az első trükk videójának</title>
+</head>
+<body>
+    <a href="page2.html" id=".kulso">Vissza az előző oldalra!</a>
+    <button onclick="increaseTextSize()">Betűméret növelése</button>
+  <button onclick="decreaseTextSize()">Betűméret csökkentése</button>
+  <button onclick="resetTextSize()">Betűméret alaphelyzet</button>
+  <button onclick="toggleContrast()">Nagykontrasztú mód</button>
+  <a href="#main-content" class="skip-link">Ugrás a tartalomra</a>
+  <section id="video">
+    <header>
+    <h1>Videó leírása</h1>
+    </header>
+    <p id="main-content">Egy bűvésztrükköt mutatok be a videóban. 4 király és 4 királynő sorba van téve, megmutatom őket. A néző, aki ebben az esetben csak szövegként van jelen, választ egy lapot. Ez a lap most a Káró királynő. Elkezdem elfelezni a lapokat. Egyet le-, egyet felcsúsztatok, és mikor végére értem a 8 lapnak, a felcsúsztatott lapokat megmutatom. Megkérdezem a nézőt hogy látja-e a lapját, ő úgy válaszol hogy igen. Visszateszem a lapokat a többihez. Ugyanezt megcsinálom még kétszer. Utána elfelezem a lapokat az asztalon, egyet ide, egyet oda.Felfordítom az egyik paklit ami egy dáma, ez megmutatta a nézőnek, hogy tudom hogy dáma lapja van. A maradék kártyát is elfelezem, megint felfordítom az egyik paklit. Ez a felfordított lap, megmondja hogy piros volt vagy fekete. Piros a felfordított lap. Az utolsó két kártyát ketté szedem. Az egyik a káró király, megmutatom hogy azt is tudom hogy káró volt a néző lapja. Ezután egyetlen lap maradt, ez a káró királynő, a néző szabadon választott lapja.</p>
+</section>  
+
+
+    <script>
+        function increaseTextSize() {
+          document.body.style.fontSize = 'larger';
+        }
+    
+        function decreaseTextSize() {
+          document.body.style.fontSize = 'smaller';
+        }
+    
+        function resetTextSize() {
+          document.body.style.fontSize = 'initial';
+        }
+    
+        function toggleContrast() {
+            document.body.classList.toggle('high-contrast');
+        }
+      </script>
+</body>
+</html>

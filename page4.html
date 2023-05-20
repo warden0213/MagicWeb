@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Űrlap - Hogyan sikerültek a trükkök?</title>
+  <script>
+    function updateTextSize() {
+      var slider = document.getElementById("textSizeSlider");
+      var textSize = slider.value + "px";
+      document.body.style.fontSize = textSize;
+    }
+
+    function resetTextSize() {
+      var slider = document.getElementById("textSizeSlider");
+      slider.value = 16; // Set the default font size value
+      updateTextSize();
+    }
+
+    function toggleContrast() {
+      var divs = document.getElementsByTagName("div");
+      for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.toggle('high-contrast');
+      }
+    }
+  </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="images/cardsNavbar.png" alt="Kártyák, a főoldalra visz kattintáskor" id="navkep"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page2.html">Trükk tutorial 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page3.html">Trükk tutorial 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-primary" href="page4.html">Űrlap a trükkökről</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <label for="textSizeSlider" class="sliderLabel">Betűméret állító csúszka</label>
+      <input type="range" id="textSizeSlider" min="12" max="30" value="16" onchange="updateTextSize()">
+      <button onclick="resetTextSize()">Betűméret alaphelyzet</button>
+      <button onclick="toggleContrast()">Sötét Mód (Nagykontraszt)</button>
+      <a href="#main-content" class="skip-link">Ugrás a tartalomra</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="sidebar">
+              <h1>Űrlap - Felmérés, mennyire hasznos a tutorial?</h1>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="content">
+                <form method="POST" action="submit.php" id="main-content">
+                <label for="name">Név:</label>
+                <br>
+                <input type="text" id="name" name="name" maxlength="35" required>
+                <br><br>
+                
+                <label for="message">Saját vélemény(nem kötelező):</label>
+                <br>
+                <textarea id="message" name="message" maxlength="200" rows="6" cols="50"></textarea>
+                <br><br>
+                
+                <label>Melyik ment a legjobban?</label>
+                <br>
+                    <input type="radio" id="option1" name="options" value="option1" required> 
+                    <label for="option1"> 4 Király 4 Királynő</label>
+                    <br>               
+                    <input type="radio" id="option2" name="options" value="option2" required>          
+                    <label for="option2"> 3 Card Monte</label>
+                    <br><br>
+                
+                <label>Melyik trükk(ök) nem sikerült(ek)?</label>
+                <br>
+                    <input type="checkbox" id="checkbox1" name="checkbox1"> 
+                    <label for="checkbox1"> 4 Király 4 Királynő</label>
+                    <br> 
+                
+                    <input type="checkbox" id="checkbox2" name="checkbox2"> 
+                    <label for="checkbox2"> 3 Card Monte</label>
+                <br><br>
+                
+                <input type="submit" value="Küldés">
+                <input type="reset" value="Alaphelyzet">
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

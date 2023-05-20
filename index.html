@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Félreértések a bűvészetről</title>
+  <script>
+    function updateTextSize() {
+      var slider = document.getElementById("textSizeSlider");
+      var textSize = slider.value + "px";
+      document.body.style.fontSize = textSize;
+    }
+
+    function resetTextSize() {
+      var slider = document.getElementById("textSizeSlider");
+      slider.value = 16; // Set the default font size value
+      updateTextSize();
+    }
+
+    function toggleContrast() {
+      var divs = document.getElementsByTagName("div");
+      for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.toggle('high-contrast');
+      }
+    }
+  </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="images/cardsNavbar.png" alt="Kártyák, a főoldalra visz kattintáskor" id="navkep"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="index.html">Kezdőlap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page2.html">Trükk tutorial 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page3.html">Trükk tutorial 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page4.html">Űrlap a trükkökről</a>
+            </li>
+          </ul>
+        </div>
+      </nav> 
+      <label for="textSizeSlider" class="sliderLabel">Betűméret állító csúszka</label>
+      <input type="range" id="textSizeSlider" min="12" max="30" value="16" onchange="updateTextSize()">
+      <button onclick="resetTextSize()">Betűméret alaphelyzet</button>
+      <button onclick="toggleContrast()">Sötét Mód (Nagykontraszt)</button>
+      <a href="#main-content" class="skip-link">Ugrás a tartalomra</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="sidebar">
+              <header> 
+                <h1>Félreértések a bűvészetről</h1>     
+              </header>          
+        <article id="main-content">
+          <header><h2>Félreértések a nézők részéről</h2></header>
+        <p><strong>Ez a weboldal néhány trükk bemutására, megtanítására szolgál</strong>, azonban pár nagyon fontos dolgot érdemes tudni a bűvészetről. A laikusoknak sokszor igen furcsa felfogásuk van ezzel a szórakoztatási formával. A <strong>nézőknek</strong> (a bűvész szerencséjére) elég <strong>"buta" elképzeléseik vannak a bűvészetről</strong>. Sokan mindig gyanakodnak, hogy van valamilyen eszköz vagy csalás. Van egy zsinór, van egy rejtett zseb, a lapok nem igaziak, stb. Mutatsz egy trükköt, és azonnal azt mondják: "Ó, igen?! Láthatom azt a pakli kártyát?!" vagy "Meg tudod csinálni a saját paklimmal is?!"</p>
+        
+       <p>Ami azt illeti, néha igazuk van.</p>
+        
+        <p>Egy másik elterjedt félreértés kategória az, hogy ha elég közel néznek, akkor "látni fogják". Ezek az emberek szorosan figyelnek a kezeidre, amikor csinálod a dolgod, és arra várnak, hogy "azt a mozdulatot" észrevegyék.</p>
+        
+        <p>Ezeket az embereket nagyon könnyű átverni, feltéve, hogy rendelkezel egy jó repertoárral. Olyan trükkökkel, amik a "harmadik ütemre" történnek. Az asztalra varázsolt kártya az egyik kedvenc trükköm ezeknek az embereknek.</p>
+        
+        <p>Nem nevezném annyira félreértésnek, mint inkább hajlamnak, de sok néző azt feltételezi, hogy ha még csak egy kicsi részét is kitalálják a trükknek, akkor az egészre rájöttek. "Ó, a kettes pikk már a citromban volt, mielőtt elkezdődött a trükk." Igen? De akkor hogyan volt rá írva a név? Mi lenne, ha másik lapot választottál volna? Nem tartok itt 52 citromot..."</p>
+        </article>
+      </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="content">       
+              <article>
+       <header> <h2>Félreértések a bűvészek részéről</h2></header>
+       <p>Egy nagy félreértés, talán a YouTube miatt, hogy a sebesség = képesség. Vagy ahhoz kapcsolódóan, gyakori félreértés van a <strong>mesélés/jelenlét</strong> és a nehéz mozdulatok végrehajtásának relatív fontosságáról. Persze nem minden youtube influencer van rossz hatással a bűvészet tanulására, szerintem a legjobb bűvész aki youtubeon tevékenykedik, és nagy hangsúlyt fektet a tutorialjaiban az előadásmód tanítására, az <a href="https://www.youtube.com/@AlexPandrea" target="_blank" class="kulso">Alex Pandrea</a>. De ott van például <a href="https://www.youtube.com/@ChrisRamsay52" target="_blank" class="kulso">Chris Ramsay</a> aki nagyon meghatározó szerepet tölt be a bűvészet online népszerűsítésében.</p>
+        
+        <p>Egy természetes és lebilincselő előadásmód kifejlesztése nehéz... Különösen azért, mert ez nem az a fajta dolog, amit tükörben gyakorolhjatsz. Nagyon nyilvánvaló, amikor valaki csak felsorol egy szöveget, sietve "a mozdulathoz" akar eljutni. Ehelyett a közönség bevonása és kapcsolat kialakítása még a legegyszerűbb, hihetetlenül buta trükköket is csodává varázsolja.</p>
+        <a href="images/konyv_13.jpg" target="_blank"><img src="images/konyvkicsi.png" alt="Hajnóczy Soma, magyar bűvész, kétszeres bűvész világbajnok, saját könyvével"></a>
+        <p>Egy másik félreértés, hogy összekeverik, hogy mit értékelnek a bűvészek és mit a laikusok. Értem én... biztosan van némi büszkeség és jól megérdemelt utcai hírnév, ha végig tudod csinálni az összes mozdulatot az "Elrejtett erők" könyvből. Az nagyon meg fogja hatni a bűvészeket. De a laikusok számára ezek a dolgok talán nem ütnek akkorát, mint néhány önműködő (vagy majdnem önműködő) trükk. Például az "Ebből a világból" (különösen Michael Ammar verziója) a legcsodálatosabb dolog a legtöbb ember számára. És olyan könnyű! Vagy a <strong>4 Király 4 Királynő</strong>, amely az én oldalamon is bemutatásra kerül</p>
+        
+        <p>Végül azt hiszem, hogy a bűvészek néha túlságosan megelégednek azzal, hogy kialakítják a <strong>saját stílus</strong>ukat - vagy nem tesznek meg mindent ezzel kapcsolatban. Minden trükkhöz van valami sztori, de néhány bűvész nem tesz eleget az összes történet összhangba hozásához a repertoárjában. Nem feltűnő probléma, de én észreveszem. Nem kezdhetsz egyik trükköt sem olyan történettel, hogy villámcsapás ért 9 éves korodban, és varázserőt kaptál, majd egy másik trükkben mesélsz arról, hogy Indiában egy asramban fejlesztetted ki a varázsló képességeidet. </p>
+        <footer>
+          <p> 2023 Tóth András Dezső</p>
+        </footer>
+      </article>
+      </div>
+          </div>
+        </div>
+      </div>
+       
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html> 

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//HU"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="hu" xml:lang="hu">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Leírása az első trükk videójának</title>
+</head>
+<body>
+    <a href="page2.html" id=".kulso">Vissza az előző oldalra!</a>
+    <button onclick="increaseTextSize()">Betűméret növelése</button>
+  <button onclick="decreaseTextSize()">Betűméret csökkentése</button>
+  <button onclick="resetTextSize()">Betűméret alaphelyzet</button>
+  <button onclick="toggleContrast()">Nagykontrasztú mód</button>
+  <a href="#main-content" class="skip-link">Ugrás a tartalomra</a>
+  <section id="video">
+    <header>
+    <h1>Videó leírása</h1>
+    </header>
+    <p id="main-content">Egy bűvésztrükköt mutatok be a videóban, amelyben itt a piros hol a pirost játszunk. Megmutatom hogy 3 lap van nálam. Egy Joker, még egy Joker, és egy ász. Megmutatom, hogy legfelül van az Ász, azt kell követni. Beteszem az ászt alulra. Ezután a nézőnek (aki jelen esetben nincs igazából) ki kell találnia hol az ász. Azt mondja alul, megmutatom neki, hogy alul Joker van, tartozik nekem ezer forinttal. Ezután azt tippeli, hogy mégis felül maradt. De sajnos ott is Joker van, már jön nekem 2 ezressel. Azt mondja akkor középen van, megmutatom neki hogy ott is Joker van, jön nekem még egy ezressel. Ezután azt mondja, hogy nincs is nálam ász. Megmutatom neki, hogy alul van az ász, jön még egy ezressel. Ezt az ásszal ejátszuk felül, és középen is. Azt mondja azután hogy több kártya van mint 3. Leszámolom, lerakom az asztalra, és elmondom neki hogy már 7 ezressel jön nekem. Felajánlok egy dupla vagy semmi fogadást. Lerakom Jokert, és az ászt az asztalra, és azt mondom "Ha kitalálod mi a harmadik lap, kapsz 14 ezret". De a harmadik lap egy sose látott káró kilences, így jön nekem 14 ezerrel a néző. Itt vége is a trükknek.</p>
+</section>  
+
+
+    <script>
+        function increaseTextSize() {
+          document.body.style.fontSize = 'larger';
+        }
+    
+        function decreaseTextSize() {
+          document.body.style.fontSize = 'smaller';
+        }
+    
+        function resetTextSize() {
+          document.body.style.fontSize = 'initial';
+        }
+    
+        function toggleContrast() {
+            document.body.classList.toggle('high-contrast');
+        }
+      </script>
+</body>
+</html>
